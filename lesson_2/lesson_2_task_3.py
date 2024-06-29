@@ -1,6 +1,7 @@
+import math
 def square(x):
     square = x * x
     return square
-x = input("число  ")
-x = int(x)
-print(square(x))
+x = float(input("Укажите длину: "))
+x = math.ceil(x)
+print(math.ceil(square(x)))
