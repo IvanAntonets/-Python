@@ -7,10 +7,10 @@ chrome = webdriver.Chrome()
 try:
     chrome.get("http://the-internet.herokuapp.com/login")
     input_name = chrome.find_element(
-        By.ID, "username").send_keys("olegt")
+        By.ID, "username").send_keys("tomsmith")
     sleep(2)
     input_pass = chrome.find_element(
-        By.ID, "password").send_keys("secret")
+        By.ID, "password").send_keys("SuperSecretPassword!")
     sleep(1)
     button = chrome.find_element(
         By. TAG_NAME, "button").click()
